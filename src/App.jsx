@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import "./App.css"; // Importing App.css for styling
+import "./App.css"; 
 
 export default function TodoApp() {
   const [todos, setTodos] = useState([]);
