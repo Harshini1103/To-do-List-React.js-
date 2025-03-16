@@ -1,0 +1,140 @@
+/* Background Styling */
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+  padding: 20px;
+}
+
+/* To-Do Box - Glassmorphism Style */
+.todo-box {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Title */
+h2 {
+  font-size: 26px;
+  color: white;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Input Container */
+.input-container {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* Input Field */
+.input-container input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.input-container input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Add/Update Button */
+.input-container button {
+  background: linear-gradient(45deg, #ff7eb3, #ff758c);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.input-container button:hover {
+  background: linear-gradient(45deg, #ff758c, #ff5e62);
+}
+
+/* To-Do List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* List Item */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.todo-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 12px;
+}
+
+/* Edit & Delete Buttons */
+.edit-btn,
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.edit-btn {
+  color: #feca57;
+}
+
+.delete-btn {
+  color: #ff6b6b;
+}
+
+.edit-btn:hover {
+  color: #ff9f43;
+}
+
+.delete-btn:hover {
+  color: #ee5253;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .todo-box {
+    max-width: 90%;
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+
+  .input-container input {
+    width: 100%;
+  }
+
+  .input-container button {
+    width: 100%;
+    margin-top: 8px;
+  }
+}
